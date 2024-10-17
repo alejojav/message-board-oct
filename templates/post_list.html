@@ -2,6 +2,6 @@
 
 {% block content %}
     {% for record in publication_list %}
-        <p><a href="">{{ record.title }}</a></p>
+        <p><a href="{% url 'post_detail' record.pk %}">{{ record.title }}</a></p> <!-- {% url 'post_detail' record.pk %} en jinja se coloca la direccion a donde ira la pagina asi... en este caso va a "post_detail" con el registro de publication especifico "pk" -->
     {% endfor %}
 {% endblock content %}
