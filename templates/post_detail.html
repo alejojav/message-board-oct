@@ -6,4 +6,8 @@
         <p>{{ publication.author }}</p>
         <p>{{ publication.text }}</p>
     </div>
+
+    <a href="{% url 'post_edit' publication.pk %}">Publication Edit</a>
+
 {% endblock content %}
+
