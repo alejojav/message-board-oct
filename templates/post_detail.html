@@ -7,7 +7,7 @@
         <p>{{ publication.text }}</p>
     </div>
 
-    <a href="{% url 'post_edit' publication.pk %}">Publication Edit</a>
-
+    <a href="{% url 'post_edit' publication.pk %}">Publication Edit</a> | 
+    <a href="{% url 'post_delete' publication.pk %}">Post Delete</a>
 {% endblock content %}
 
